@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 238 242 245;
+  --card: 255 255 255;
+  --ink: 14 27 42;
+  --mute: 93 107 122;
+  --line: 217 224 230;
+  --acc: 15 139 141;
+  --amb: 154 91 0;
+  --ambbg: 255 242 214;
+  --danger: 179 38 30;
+  --map: 227 234 238;
+  --road: 255 255 255;
+  --water: 191 216 230;
+  --ok: 211 241 234;
+}
+
+.dark {
+  --bg: 11 20 29;
+  --card: 20 34 48;
+  --ink: 234 241 246;
+  --mute: 147 164 180;
+  --line: 36 54 70;
+  --acc: 60 196 198;
+  --amb: 242 176 74;
+  --ambbg: 53 40 15;
+  --danger: 244 139 131;
+  --map: 16 28 39;
+  --road: 29 46 61;
+  --water: 16 48 63;
+  --ok: 18 67 63;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: rgb(var(--bg));
+  color: rgb(var(--ink));
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+:focus-visible {
+  outline: 2px solid rgb(var(--acc));
+  outline-offset: 2px;
+}
